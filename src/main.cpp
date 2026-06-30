@@ -1,5 +1,5 @@
-#include <raylib.h>
-
+#include "include.h"
+#include <stdlib.h>
 int main()
 {
     InitWindow(800, 450, "Raylib Template");
@@ -9,7 +9,7 @@ int main()
     int x=10;
     int y=100;
     int x_speed=50;
-    int y_speed=50;
+    int y_speed=20;
     int gravitiy=1;
 
     while (!WindowShouldClose())
@@ -27,7 +27,10 @@ int main()
         {   
             x=440;
             x_speed=x_speed/2*-1;
-
+            y_speed=y_speed-y_speed/5;
+            if(y_speed==1){
+            y_speed=0;
+            }
         }
         if (x<=0)
         {
