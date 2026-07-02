@@ -1,5 +1,5 @@
 #include "include.h"
-#include <stdlib.h>
+
 int main()
 {
     InitWindow(800, 450, "Raylib Template");
@@ -61,23 +61,3 @@ int main()
 
     return 0;
 }
-
-
-
-
-      /*
-
-        if(x>=450)
-        x_direction=-1;
-        if (x<=0)
-        x_direction=1;
-
-        if(y>=800)
-        y_direction=-1;
-        if (y<=0)
-        y_direction=1;
-        
-        x=x+x_direction;
-
-        y=y+y_direction;
-*/
